@@ -1,4 +1,4 @@
-//SPDX-LICENSE-IDENTIFIER:GPL-2.0-or-later
+//SPDX-License-Identifier:GPL-2.0-or-later
 pragma solidity >=0.7.6;
 pragma abicoder v2;
 
@@ -26,6 +26,7 @@ contract SwapExamples {
     constructor(ISwapRouter _swapRouter) {
         swapRouter = _swapRouter;
     }
+
     /// @notice swapExactInputSingle swaps a fixed amount of DAI for a maximum possible amount of WETH9
     /// using the DAI/WETH9 0.3% pool by calling `exactInputSingle` in the swap router.
     /// @dev The calling address must approve this contract to spend at least `amountIn` worth of its DAI for this function to succeed.
